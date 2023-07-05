@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Cocktail Guide</title>
+</head>
+<body>
+  <header>
+    <h1>Cocktail Guide</h1>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search drinks...">
+      <select id="filterSelect">
+        <option value="">All</option>
+        <option value="Alcoholic">Alcoholic</option>
+        <option value="Non_Alcoholic">Non-Alcoholic</option>
+      </select>
+      <select id="sortSelect">
+        <option value="name">Name</option>
+        <option value="popularity">Popularity</option>
+        <option value="rating">Rating</option>
+      </select>
+    </div>
+  </header>
+  <main id="drinksContainer">
+    <!-- Drinks will be dynamically generated here -->
+  </main>
+  <footer>
+    <div class="rating-container">
+      <h2>Rate this drink:</h2>
+      <div class="stars-container">
+        <span class="star" data-rating="1"></span>
+        <span class="star" data-rating="2"></span>
+        <span class="star" data-rating="3"></span>
+        <span class="star" data-rating="4"></span>
+        <span class="star" data-rating="5"></span>
+      </div>
+    </div>
+    <div class="contact-container">
+      <h2>Contact Me:</h2>
+      <form id="contactForm">
+        <input type="text" id="nameInput" placeholder="Your name">
+        <input type="email" id="emailInput" placeholder="Your email">
+        <textarea id="messageInput" placeholder="Your message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>
