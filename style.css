@@ -1,4 +1,8 @@
-body {
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -6,79 +10,67 @@ body {
   
   header {
     background-color: #333;
+    padding: 20px;
     color: #fff;
-    padding: 20px;
   }
   
-  h1 {
-    margin: 0;
-  }
-  
-  .search-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-top: 10px;
-  }
-  
-  #searchInput,
-  #filterSelect,
-  #sortSelect {
-    margin-left: 10px;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
-  footer {
-    background-color: #eee;
-    padding: 20px;
+  .container {
     display: flex;
     justify-content: space-between;
   }
   
-  .rating-container,
-  .contact-container {
-    width: 45%;
+  .sidebar {
+    flex-basis: 25%;
+    background-color: #f2f2f2;
+    padding: 20px;
+    height: calc(100vh - 180px); /* Adjust the height as needed */
+    overflow-y: auto;
   }
   
-  .rating-container h2,
-  .contact-container h2 {
-    margin-top: 0;
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
   }
   
-  .stars-container {
-    display: flex;
-  }
-  
-  .star {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-color: #ccc;
-    margin-right: 5px;
+  .sidebar li {
     cursor: pointer;
+    padding: 10px 0;
   }
   
-  .star.active {
-    background-color: gold;
+  .main-content {
+    flex-basis: 75%;
+    padding: 20px;
   }
   
-  .contact-container form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 10px;
+  #selectedDrink {
+    text-align: center;
   }
   
-  .contact-container input,
-  .contact-container textarea,
-  .contact-container button {
-    margin-top: 5px;
+  #selectedDrink img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
   }
   
-  .contact-container button {
-    padding: 5px 10px;
+  .rating {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .rating-stars {
+    color: gold;
+    font-size: 24px;
+  }
+  
+  footer {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  footer form {
+    margin-top: 20px;
   }
   

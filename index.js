@@ -1,78 +1,80 @@
-// DOM elements
-const drinksContainer = document.getElementById("drinksContainer");
-const searchInput = document.getElementById("searchInput");
-const filterSelect = document.getElementById("filterSelect");
-const sortSelect = document.getElementById("sortSelect");
-
-// Filter and sorting variables
-let filteredDrinks = [];
-let currentSort = "name";
-
-// Render drinks based on filter and sort
-function renderDrinks() {
-  drinksContainer.innerHTML = "";
-
-  // Apply filters
-  filteredDrinks = drinks.filter((drink) => {
-    const searchTerm = searchInput.value.toLowerCase();
-    const filterValue = filterSelect.value.toLowerCase();
-
-    return (
-      drink.name.toLowerCase().includes(searchTerm) &&
-      (filterValue === "" || drink.category.toLowerCase() === filterValue)
-    );
-  });
-
-  // Sort drinks
-  filteredDrinks.sort((a, b) => {
-    if (currentSort === "name") {
-      return a.name.localeCompare(b.name);
-    } else if (currentSort === "popularity") {
-      return b.popularity - a.popularity;
-    } else if (currentSort === "rating") {
-      return b.rating - a.rating;
+document.addEventListener('DOMContentLoaded', () => {
+  // Fetch drinks data from API
+  async function getDrinks() {
+    try {
+      const response = await fetch('https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail');
+      const data = await response.json();
+      return data.drinks;
+    } catch (error) {
+      console.log('Error fetching drinks:', error);
+      return [];
     }
-  });
+  }
 
-  // Render drinks
-  filteredDrinks.forEach((drink) => {
-    const drinkCard = createDrinkCard(drink);
-    drinksContainer.appendChild(drinkCard);
-  });
-}
+  // Display the list of drinks
+  function displayDrinks(drinks) {
+    const drinksList = document.getElementById('drinksList');
+    drinks.forEach(drink => {
+      const drinkItem = document.createElement('li');
+      drinkItem.textContent = drink.strDrink;
+      drinkItem.addEventListener('click', () => {
+        displaySelectedDrink(drink);
+      });
+      drinksList.appendChild(drinkItem);
+    });
+  }
 
-// Create drink card element
-function createDrinkCard(drink) {
-  const drinkCard = document.createElement("div");
-  drinkCard.className = "drink-card";
+  // Display the selected drink
+  function displaySelectedDrink(drink) {
+    const selectedDrinkSection = document.getElementById('selectedDrink');
+    selectedDrinkSection.innerHTML = `
+      <img src="${drink.strDrinkThumb}" alt="${drink.strDrink}">
+      <h2>${drink.strDrink}</h2>
+      <h3>Ingredients:</h3>
+      <p>${drink.strIngredient1}, ${drink.strIngredient2}, ${drink.strIngredient3}, ${drink.strIngredient4}</p>
+      <h3>Instructions:</h3>
+      <p>${drink.strInstructions}</p>
+    `;
+  }
 
-  const drinkImage = document.createElement("img");
-  drinkImage.src = drink.image;
-  drinkImage.alt = drink.name;
-  drinkCard.appendChild(drinkImage);
+  // Add event listeners to the rating stars
+  function addRatingEventListeners() {
+    const ratingStars = document.querySelectorAll('.rating-stars i');
+    ratingStars.forEach(star => {
+      star.addEventListener('click', () => {
+        const rating = star.dataset.rating;
+        displayRatingMessage(rating);
+      });
+    });
+  }
 
-  const drinkName = document.createElement("h3");
-  drinkName.textContent = drink.name;
-  drinkCard.appendChild(drinkName);
+  // Display the rating message
+  function displayRatingMessage(rating) {
+    const ratingMessage = document.getElementById('ratingMessage');
+    ratingMessage.textContent = `You rated this drink ${rating} stars. Thank you!`;
+  }
 
-  const drinkIngredients = document.createElement("p");
-  drinkIngredients.textContent = `Ingredients: ${drink.ingredients.join(", ")}`;
-  drinkCard.appendChild(drinkIngredients);
+  // Handle form submission for contact
+  function handleFormSubmit(event) {
+    event.preventDefault();
+    const nameInput = document.getElementById('nameInput');
+    const messageInput = document.getElementById('messageInput');
+    console.log(`Name: ${nameInput.value}, Message: ${messageInput.value}`);
+    nameInput.value = '';
+    messageInput.value = '';
+  }
 
-  const drinkRecipe = document.createElement("p");
-  drinkRecipe.textContent = `Recipe: ${drink.recipe}`;
-  drinkCard.appendChild(drinkRecipe);
+  // Fetch drinks and initialize the page
+  getDrinks()
+    .then(drinks => {
+      displayDrinks(drinks);
+      addRatingEventListeners();
+    })
+    .catch(error => {
+      console.log('Error initializing the page:', error);
+    });
 
-  return drinkCard;
-}
-
-// Event listeners
-searchInput.addEventListener("input", renderDrinks);
-filterSelect.addEventListener("change", renderDrinks);
-sortSelect.addEventListener("change", () => {
-  currentSort = sortSelect.value;
-  renderDrinks();
+  // Add form submission event listener
+  const form = document.querySelector('form');
+  form.addEventListener('submit', handleFormSubmit);
 });
-
-// Initial render
-renderDrinks();

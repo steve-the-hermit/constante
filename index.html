@@ -1,52 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Cocktail Guide</title>
+  <title>Drink Recipes</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Cocktail Guide</h1>
-    <div class="search-container">
-      <input type="text" id="searchInput" placeholder="Search drinks...">
-      <select id="filterSelect">
-        <option value="">All</option>
-        <option value="Alcoholic">Alcoholic</option>
-        <option value="Non_Alcoholic">Non-Alcoholic</option>
-      </select>
-      <select id="sortSelect">
-        <option value="name">Name</option>
-        <option value="popularity">Popularity</option>
-        <option value="rating">Rating</option>
-      </select>
-    </div>
+    <h1>Drink Recipes</h1>
+    <input type="text" id="searchInput" placeholder="Search drinks...">
   </header>
-  <main id="drinksContainer">
-    <!-- Drinks will be dynamically generated here -->
-  </main>
-  <footer>
-    <div class="rating-container">
-      <h2>Rate this drink:</h2>
-      <div class="stars-container">
-        <span class="star" data-rating="1"></span>
-        <span class="star" data-rating="2"></span>
-        <span class="star" data-rating="3"></span>
-        <span class="star" data-rating="4"></span>
-        <span class="star" data-rating="5"></span>
+
+  <div class="container">
+    <div class="sidebar">
+      <ul id="drinksList"></ul>
+    </div>
+    <div class="main-content">
+      <div id="selectedDrink"></div>
+      <div class="rating">
+        <h3>Rate this drink:</h3>
+        <div class="rating-stars">
+          <i class="fas fa-star" data-rating="1"></i>
+          <i class="fas fa-star" data-rating="2"></i>
+          <i class="fas fa-star" data-rating="3"></i>
+          <i class="fas fa-star" data-rating="4"></i>
+          <i class="fas fa-star" data-rating="5"></i>
+        </div>
+        <p id="ratingMessage"></p>
       </div>
     </div>
-    <div class="contact-container">
-      <h2>Contact Me:</h2>
-      <form id="contactForm">
-        <input type="text" id="nameInput" placeholder="Your name">
-        <input type="email" id="emailInput" placeholder="Your email">
-        <textarea id="messageInput" placeholder="Your message"></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </div>
+  </div>
+
+  <footer>
+    <h3>Contact Me</h3>
+    <form>
+      <input type="text" id="nameInput" placeholder="Your Name" required>
+      <textarea id="messageInput" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
   </footer>
+
+  <button id="scrollToTopButton" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
   <script src="index.js"></script>
 </body>
 </html>
