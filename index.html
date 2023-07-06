@@ -1,35 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Drink Recipes</title>
+  <title>Drinks AHOY!</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Drink Recipes</h1>
-    <input type="text" id="searchInput" placeholder="Search drinks...">
+    <h1>Drink Catalogue</h1>
+    <h2>we may not have a price,but we sure do have a <i>drink!</i></h2>
   </header>
 
   <div class="container">
-    <div class="sidebar">
-      <ul id="drinksList"></ul>
-    </div>
-    <div class="main-content">
-      <div id="selectedDrink"></div>
-      <div class="rating">
-        <h3>Rate this drink:</h3>
-        <div class="rating-stars">
-          <i class="fas fa-star" data-rating="1"></i>
-          <i class="fas fa-star" data-rating="2"></i>
-          <i class="fas fa-star" data-rating="3"></i>
-          <i class="fas fa-star" data-rating="4"></i>
-          <i class="fas fa-star" data-rating="5"></i>
-        </div>
-        <p id="ratingMessage"></p>
-      </div>
-    </div>
+    <div id="drinksContainer"></div>
   </div>
-
+  
+  <div id="drinkPopup" class="drink-popup">
+    <span class="drink-popup-close">&times;</span>
+    <div id="drinkPopupContent"></div>
+  </div>
+  
   <footer>
     <h3>Contact Me</h3>
     <form>

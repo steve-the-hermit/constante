@@ -11,70 +11,66 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Display the list of drinks
   function displayDrinks(drinks) {
-    const drinksList = document.getElementById('drinksList');
-    drinks.forEach(drink => {
-      const drinkItem = document.createElement('li');
-      drinkItem.textContent = drink.strDrink;
-      drinkItem.addEventListener('click', () => {
-        displaySelectedDrink(drink);
+    const drinkContainer = document.getElementById("drinksContainer");
+    drinkContainer.innerHTML = "";
+
+    drinks.forEach((drink) => {
+      const drinkElement = document.createElement("div");
+      drinkElement.classList.add("drink-card");
+
+      const drinkImage = document.createElement("img");
+      drinkImage.src = drink.strDrinkThumb;
+      drinkImage.alt = drink.strDrink;
+      drinkElement.appendChild(drinkImage);
+
+      const drinkName = document.createElement("h2");
+      drinkName.textContent = drink.strDrink;
+      drinkElement.appendChild(drinkName);
+
+      const drinkPrice = document.createElement("p");
+      if (drink.hasOwnProperty("price")) {
+        drinkPrice.textContent = `Price: $${drink.price.toFixed(2)}`;
+      } else {
+        drinkPrice.textContent = "Price: N/A";
+      }
+      drinkElement.appendChild(drinkPrice);
+
+      drinkElement.addEventListener("click", () => {
+        openDrinkPopup(drink);
+        setTimeout(() => {
+          closeDrinkPopup();
+        }, 2000);
       });
-      drinksList.appendChild(drinkItem);
+
+      drinkContainer.appendChild(drinkElement);
     });
   }
 
-  // Display the selected drink
-  function displaySelectedDrink(drink) {
-    const selectedDrinkSection = document.getElementById('selectedDrink');
-    selectedDrinkSection.innerHTML = `
+  function openDrinkPopup(drink) {
+    const drinkPopup = document.getElementById("drinkPopup");
+    const drinkPopupContent = document.getElementById("drinkPopupContent");
+
+    drinkPopupContent.innerHTML = `
       <img src="${drink.strDrinkThumb}" alt="${drink.strDrink}">
       <h2>${drink.strDrink}</h2>
-      <h3>Ingredients:</h3>
-      <p>${drink.strIngredient1}, ${drink.strIngredient2}, ${drink.strIngredient3}, ${drink.strIngredient4}</p>
-      <h3>Instructions:</h3>
-      <p>${drink.strInstructions}</p>
+      <p>${drink.instructions}</p>
     `;
+
+    drinkPopup.style.display = "block";
   }
 
-  // Add event listeners to the rating stars
-  function addRatingEventListeners() {
-    const ratingStars = document.querySelectorAll('.rating-stars i');
-    ratingStars.forEach(star => {
-      star.addEventListener('click', () => {
-        const rating = star.dataset.rating;
-        displayRatingMessage(rating);
-      });
-    });
-  }
-
-  // Display the rating message
-  function displayRatingMessage(rating) {
-    const ratingMessage = document.getElementById('ratingMessage');
-    ratingMessage.textContent = `You rated this drink ${rating} stars. Thank you!`;
-  }
-
-  // Handle form submission for contact
-  function handleFormSubmit(event) {
-    event.preventDefault();
-    const nameInput = document.getElementById('nameInput');
-    const messageInput = document.getElementById('messageInput');
-    console.log(`Name: ${nameInput.value}, Message: ${messageInput.value}`);
-    nameInput.value = '';
-    messageInput.value = '';
+  function closeDrinkPopup() {
+    const drinkPopup = document.getElementById("drinkPopup");
+    drinkPopup.style.display = "none";
   }
 
   // Fetch drinks and initialize the page
   getDrinks()
     .then(drinks => {
       displayDrinks(drinks);
-      addRatingEventListeners();
     })
     .catch(error => {
       console.log('Error initializing the page:', error);
     });
-
-  // Add form submission event listener
-  const form = document.querySelector('form');
-  form.addEventListener('submit', handleFormSubmit);
 });

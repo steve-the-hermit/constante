@@ -1,429 +1,204 @@
 {
     "cocktails": [
       {
-        "id": "1",
         "name": "Margarita",
-        "category": "Ordinary Drink",
-        "glass": "Cocktail glass",
-        "instructions": "Rub the rim of the glass with the lime slice to make the salt stick to it. Take care to moisten only the outer rim and sprinkle the salt on it. The salt should present to the lips of the imbiber and never mix into the cocktail. Shake the other ingredients with ice, then carefully pour into the glass.",
-        "ingredients": [
-          "Tequila",
-          "Triple sec",
-          "Lime juice",
-          "Salt"
-        ],
-        "thumbnail": "https://www.thecocktaildb.com/images/media/drink/5noda61589575158.jpg"
+        "price": 8.99,
+        "ingredients": ["Tequila", "Triple Sec", "Lime Juice", "Salt"],
+        "glass": "Margarita Glass",
+        "instructions": "1. Rim the glass with salt. 2. Fill a shaker with ice. 3. Add tequila, triple sec, and lime juice. 4. Shake well. 5. Strain into the prepared glass filled with ice. 6. Garnish with a lime wheel.",
+        "image": "margarita.jpg"
       },
       {
-        "id": "2",
         "name": "Martini",
-        "category": "Cocktail",
-        "glass": "Cocktail glass",
-        "instructions": "Stir the gin and vermouth together with ice cubes in a mixing glass. Strain into a chilled cocktail glass. Garnish with an olive or a twist of lemon zest.",
-        "ingredients": [
-          "Gin",
-          "Dry Vermouth"
-        ],
-        "thumbnail": "https://www.thecocktaildb.com/images/media/drink/71t8581504353095.jpg"
+        "price": 10.99,
+        "ingredients": ["Gin", "Dry Vermouth", "Olives"],
+        "glass": "Martini Glass",
+        "instructions": "1. Fill a mixing glass with ice. 2. Add gin and dry vermouth. 3. Stir well. 4. Strain into a chilled martini glass. 5. Garnish with olives.",
+        "image": "martini.jpg"
       },
       {
-        "id": "3",
-        "name": "Cosmopolitan",
-        "category": "Cocktail",
-        "glass": "Cocktail glass",
-        "instructions": "Shake all ingredients in a cocktail shaker with ice. Strain into a large cocktail glass.",
-        "ingredients": [
-          "Vodka",
-          "Triple sec",
-          "Lime juice",
-          "Cranberry juice"
-        ],
-        "thumbnail": "https://www.thecocktaildb.com/images/media/drink/kpsajh1504368362.jpg"
-      },
-      {
-        "id": "4",
-        "name": "Old Fashioned",
-        "category": "Cocktail",
-        "glass": "Old-fashioned glass",
-        "instructions": "In an old-fashioned glass, muddle the sugar cube with a few dashes of water. Add the bitters, whiskey, and ice cubes. Stir well. Garnish with an orange twist and a cherry.",
-        "ingredients": [
-          "Sugar",
-          "Bitters",
-          "Bourbon",
-          "Water",
-          "Orange twist",
-          "Cherry"
-        ],
-        "thumbnail": "https://www.thecocktaildb.com/images/media/drink/vrwquq1478252802.jpg"
-      },
-      {
-        "id": "5",
-        "name": "Mojito",
-        "category": "Cocktail",
-        "glass": "Highball glass",
-        "instructions": "Muddle the mint leaves and sugar with a splash of soda water in a glass. Add ice cubes and the rum, then top with soda water. Garnish with a sprig of mint leaves and a lime wedge.",
-        "ingredients": [
-          "Mint leaves",
-          "Sugar",
-          "Lime juice",
-          "White rum",
-          "Soda water"
-        ],
-        "thumbnail": "https://www.thecocktaildb.com/images/media/drink/3z6xdi1589574603.jpg"
-      },
-      {
-        "id": "6",
         "name": "Pina Colada",
-        "category": "Cocktail",
-        "glass": "Hurricane glass",
-        "instructions": "Blend all the ingredients with ice in a electric blender, pour into a large cocktail glass. Garnish with a slice of pineapple and a cherry.",
-        "ingredients": [
-          "Light rum",
-          "Coconut cream",
-          "Pineapple juice"
-        ],
-        "thumbnail": "https://www.thecocktaildb.com/images/media/drink/cpf4j51504371346.jpg"
+        "price": 9.99,
+        "ingredients": ["White Rum", "Coconut Cream", "Pineapple Juice", "Pineapple Wedge", "Cherry"],
+        "glass": "Hurricane Glass",
+        "instructions": "1. Fill a blender with ice. 2. Add white rum, coconut cream, and pineapple juice. 3. Blend until smooth. 4. Pour into a hurricane glass. 5. Garnish with a pineapple wedge and a cherry.",
+        "image": "pina-colada.jpg"
       },
       {
-        "id": "7",
         "name": "Negroni",
-        "category": "Cocktail",
-        "glass": "Old-fashioned glass",
-        "instructions": "Stir into glass over ice, garnish and serve.",
-        "ingredients": [
-          "Gin",
-          "Campari",
-          "Sweet Vermouth"
-        ],
-        "thumbnail": "https://www.thecocktaildb.com/images/media/drink/qgdu971561574065.jpg"
+        "price": 10.99,
+        "ingredients": ["Gin", "Campari", "Sweet Vermouth", "Orange Peel"],
+        "glass": "Rocks Glass",
+        "instructions": "1. Fill a mixing glass with ice. 2. Add gin, Campari, and sweet vermouth. 3. Stir well. 4. Strain into a rocks glass filled with ice. 5. Garnish with an orange peel.",
+        "image": "negroni.jpg"
       },
       {
-        "id": "8",
         "name": "Caipirinha",
-        "category": "Ordinary Drink",
-        "glass": "Old-fashioned glass",
-        "instructions": "Muddle lime and sugar in an old-fashioned glass. Fill with ice and add the Cachaça.",
-        "ingredients": [
-          "Lime",
-          "Sugar",
-          "Cachaça"
-        ],
-        "thumbnail": "https://www.thecocktaildb.com/images/media/drink/tvrnmt1482603514.jpg"
+        "price": 7.99,
+        "ingredients": ["Cachaça", "Lime", "Sugar"],
+        "glass": "Rocks Glass",
+        "instructions": "1. Cut the lime into wedges and muddle with sugar in a glass. 2. Fill the glass with crushed ice. 3. Pour cachaça over the ice. 4. Stir gently. 5. Garnish with a lime wedge.",
+        "image": "caipirinha.jpg"
       },
       {
-        "id": "9",
         "name": "Moscow Mule",
-        "category": "Punch / Party Drink",
+        "price": 9.99,
+        "ingredients": ["Vodka", "Ginger Beer", "Lime Juice", "Lime Wedge"],
         "glass": "Copper Mug",
-        "instructions": "Combine vodka and ginger beer in a copper mug filled with ice. Add lime juice. Stir gently and garnish with a lime slice.",
-        "ingredients": [
-          "Vodka",
-          "Lime juice",
-          "Ginger beer"
-        ],
-        "thumbnail": "https://www.thecocktaildb.com/images/media/drink/3pylqc1504370988.jpg"
+        "instructions": "1. Fill a copper mug with ice. 2. Add vodka and lime juice. 3. Top with ginger beer. 4. Stir gently. 5. Garnish with a lime wedge.",
+        "image": "moscow-mule.jpg"
       },
       {
-        "id": "10",
-        "name": "Sex on the Beach",
-        "category": "Ordinary Drink",
-        "glass": "Highball glass",
-        "instructions": "Build all ingredients in a highball glass filled with ice. Garnish with an orange slice.",
-        "ingredients": [
-          "Vodka",
-          "Peach schnapps",
-          "Cranberry juice",
-          "Grapefruit juice"
-        ],
-        "thumbnail": "https://www.thecocktaildb.com/images/media/drink/lijtw51551455287.jpg"
+        "name": "Old Fashioned",
+        "price": 11.99,
+        "ingredients": ["Bourbon", "Sugar", "Angostura Bitters", "Orange Peel", "Cherry"],
+        "glass": "Rocks Glass",
+        "instructions": "1. Muddle sugar and bitters in a glass. 2. Add a splash of water. 3. Fill the glass with ice. 4. Add bourbon. 5. Stir gently. 6. Garnish with an orange peel and a cherry.",
+        "image": "old-fashioned.jpg"
       },
       {
-        "id": "11",
-        "name": "Long Island Iced Tea",
-        "category": "Ordinary Drink",
-        "glass": "Collins glass",
-        "instructions": "Mix all ingredients together in a glass with ice. Top with a lemon slice.",
-        "ingredients": [
-          "Vodka",
-          "Tequila",
-          "Rum",
-          "Gin",
-          "Triple sec",
-          "Lemon juice",
-          "Cola"
-        ],
-        "thumbnail": "https://www.thecocktaildb.com/images/media/drink/wx7hsg1504370510.jpg"
+        "name": "Sangria",
+        "price": 8.99,
+        "ingredients": ["Red Wine", "Orange Liqueur", "Orange Juice", "Lemon Juice", "Lime Juice", "Sugar", "Orange Slice", "Lemon Slice", "Lime Slice"],
+        "glass": "Wine Glass",
+        "instructions": "1. Mix red wine, orange liqueur, orange juice, lemon juice, lime juice, and sugar in a pitcher. 2. Add orange, lemon, and lime slices. 3. Stir well. 4. Fill a wine glass with ice. 5. Pour the sangria into the glass, including the fruit slices.",
+        "image": "sangria.jpg"
       },
       {
-        "id": "12",
-        "name": "Daiquiri",
-        "category": "Ordinary Drink",
-        "glass": "Cocktail glass",
-        "instructions": "Pour all ingredients into a shaker with ice. Shake well. Strain into a cocktail glass.",
-        "ingredients": [
-          "Light rum",
-          "Lime juice",
-          "Sugar"
-        ],
-        "thumbnail": "https://www.thecocktaildb.com/images/media/drink/usuuur1439906797.jpg"
+        "name": "Cosmopolitan",
+        "price": 9.99,
+        "ingredients": ["Vodka", "Cranberry Juice", "Triple Sec", "Lime Juice", "Lime Twist"],
+        "glass": "Martini Glass",
+        "instructions": "1. Fill a shaker with ice. 2. Add vodka, cranberry juice, triple sec, and lime juice. 3. Shake well. 4. Strain into a chilled martini glass. 5. Garnish with a lime twist.",
+        "image": "cosmopolitan.jpg"
       },
       {
-        "id": "13",
-        "name": "Whiskey Sour",
-        "category": "Ordinary Drink",
-        "glass": "Old-fashioned glass",
-        "instructions": "Shake with ice. Strain into a whiskey sour glass. Garnish and serve.",
-        "ingredients": [
-          "Blended whiskey",
-          "Lemon juice",
-          "Sugar",
-          "Cherry",
-          "Orange"
-        ],
-        "thumbnail": "https://www.thecocktaildb.com/images/media/drink/o56h041504352725.jpg"
+        "name": "Mojito",
+        "price": 8.99,
+        "ingredients": ["White Rum", "Lime Juice", "Sugar", "Mint Leaves", "Club Soda", "Lime Wedge", "Mint Sprig"],
+        "glass": "Collins Glass",
+        "instructions": "1. Muddle mint leaves and sugar with a splash of lime juice in a glass. 2. Fill the glass with ice. 3. Add white rum and lime juice. 4. Stir gently. 5. Top with club soda. 6. Garnish with a lime wedge and a mint sprig.",
+        "image": "mojito.jpg"
       },
       {
-        "id": "14",
-        "name": "Mai Tai",
-        "category": "Ordinary Drink",
-        "glass": "Collins glass",
-        "instructions": "Shake all ingredients with ice. Strain into glass. Garnish and serve with straw.",
-        "ingredients": [
-          "Light rum",
-          "Orgeat syrup",
-          "Triple sec",
-          "Sweet and sour",
-          "Cherry",
-          "Pineapple"
-        ],
-        "thumbnail": "https://www.thecocktaildb.com/images/media/drink/twyrrp1439907470.jpg"
-      },
-      {
-        "id": "15",
-        "name": "Pisco Sour",
-        "category": "Ordinary Drink",
-        "glass": "Whiskey sour glass",
-        "instructions": "Shake and strain into a chilled champagne flute.",
-        "ingredients": [
-          "Pisco",
-          "Lemon juice",
-          "Sugar",
-          "Egg white"
-        ],
-        "thumbnail": "https://www.thecocktaildb.com/images/media/drink/tsssur1439907622.jpg"
-      },
-      {
-        "id": "16",
         "name": "Bloody Mary",
-        "category": "Ordinary Drink",
-        "glass": "Old-fashioned glass",
-        "instructions": "Stirring gently, pour all ingredients into highball glass. Garnish.",
-        "ingredients": [
-          "Vodka",
-          "Tomato juice",
-          "Lemon juice",
-          "Worcestershire sauce",
-          "Tabasco sauce",
-          "Lime",
-          "Celery salt",
-          "Salt",
-          "Pepper"
-        ],
-        "thumbnail": "https://www.thecocktaildb.com/images/media/drink/t6caa21582485702.jpg"
+        "price": 10.99,
+        "ingredients": ["Vodka", "Tomato Juice", "Worcestershire Sauce", "Hot Sauce", "Lemon Juice", "Celery Salt", "Black Pepper", "Celery Stalk", "Lemon Wedge", "Olive"],
+        "glass": "Highball Glass",
+        "instructions": "1. Rim the glass with celery salt. 2. Fill the glass with ice. 3. Add vodka, tomato juice, Worcestershire sauce, hot sauce, lemon juice, celery salt, and black pepper. 4. Stir well. 5. Garnish with a celery stalk, lemon wedge, and olive.",
+        "image": "bloody-mary.jpg"
       },
       {
-        "id": "17",
-        "name": "Espresso Martini",
-        "category": "Coffee / Tea",
-        "glass": "Cocktail glass",
-        "instructions": "Shake well, strain into a large cocktail glass.",
-        "ingredients": [
-          "Vodka",
-          "Kahlua",
-          "Sugar syrup",
-          "Espresso"
-        ],
-        "thumbnail": "https://www.thecocktaildb.com/images/media/drink/0lrmjp1487603166.jpg"
-      },
-      {
-        "id": "18",
-        "name": "White Russian",
-        "category": "Ordinary Drink",
-        "glass": "Old-fashioned glass",
-        "instructions": "Pour vodka and coffee liqueur over ice cubes in an old-fashioned glass. Fill with light cream and serve.",
-        "ingredients": [
-          "Vodka",
-          "Coffee liqueur",
-          "Light cream"
-        ],
-        "thumbnail": "https://www.thecocktaildb.com/images/media/drink/wpxpvu1439905379.jpg"
-      },
-      {
-        "id": "19",
-        "name": "Gin and Tonic",
-        "category": "Ordinary Drink",
-        "glass": "Highball glass",
-        "instructions": "Pour the gin and the tonic water into a highball glass almost filled with ice cubes. Stir well.",
-        "ingredients": [
-          "Gin",
-          "Tonic water"
-        ],
-        "thumbnail": "https://www.thecocktaildb.com/images/media/drink/uwryxx1483387879.jpg"
-      },
-      {
-        "id": "20",
-        "name": "Screwdriver",
-        "category": "Ordinary Drink",
-        "glass": "Highball glass",
-        "instructions": "Mix in a highball glass with ice. Garnish and serve.",
-        "ingredients": [
-          "Vodka",
-          "Orange juice"
-        ],
-        "thumbnail": "https://www.thecocktaildb.com/images/media/drink/8xnyke1504352207.jpg"
-      },
-      {
-        "id": "21",
-        "name": "Tequila Sunrise",
-        "category": "Ordinary Drink",
-        "glass": "Highball glass",
-        "instructions": "Pour tequila into a highball glass with ice cubes. Add orange juice and stir gently. Garnish with a half-slice of orange.",
-        "ingredients": [
-          "Tequila",
-          "Orange juice",
-          "Grenadine"
-        ],
-        "thumbnail": "https://www.thecocktaildb.com/images/media/drink/quqyqp1480879103.jpg"
-      },
-      {
-        "id": "22",
-        "name": "Manhattan",
-        "category": "Cocktail",
-        "glass": "Cocktail glass",
-        "instructions": "Stirred over ice, strained into a large cocktail glass.",
-        "ingredients": [
-          "Sweet Vermouth",
-          "Bourbon",
-          "Angostura bitters",
-          "Ice",
-          "Maraschino cherry",
-          "Orange peel"
-        ],
-        "thumbnail": "https://www.thecocktaildb.com/images/media/drink/ec2jtz1504350429.jpg"
-      },
-      {
-        "id": "23",
-        "name": "Screwdriver",
-        "category": "Ordinary Drink",
-        "glass": "Highball glass",
-        "instructions": "Pour vodka and orange juice into a highball glass over ice. Add a dash of grenadine, garnish and serve.",
-        "ingredients": [
-          "Vodka",
-          "Orange juice",
-          "Grenadine"
-        ],
-        "thumbnail": "https://www.thecocktaildb.com/images/media/drink/2t9r6w1504374811.jpg"
-      },
-      {
-        "id": "24",
-        "name": "Sidecar",
-        "category": "Ordinary Drink",
-        "glass": "Cocktail glass",
-        "instructions": "Pour all ingredients into cocktail shaker filled with ice. Shake well and strain into cocktail glass.",
-        "ingredients": [
-          "Cognac",
-          "Triple sec",
-          "Lemon juice"
-        ],
-        "thumbnail": "https://www.thecocktaildb.com/images/media/drink/q5z4841582484168.jpg"
-      },
-      {
-        "id": "25",
         "name": "Daiquiri",
-        "category": "Ordinary Drink",
-        "glass": "Cocktail glass",
-        "instructions": "Pour all ingredients into shaker with ice cubes. Shake well. Strain in chilled cocktail glass.",
-        "ingredients": [
-          "Light rum",
-          "Lime juice",
-          "Sugar"
-        ],
-        "thumbnail": "https://www.thecocktaildb.com/images/media/drink/usuuur1439906797.jpg"
+        "price": 8.99,
+        "ingredients": ["White Rum", "Lime Juice", "Simple Syrup", "Lime Wheel"],
+        "glass": "Cocktail Glass",
+        "instructions": "1. Fill a shaker with ice. 2. Add white rum, lime juice, and simple syrup. 3. Shake well. 4. Strain into a chilled cocktail glass. 5. Garnish with a lime wheel.",
+        "image": "daiquiri.jpg"
       },
       {
-        "id": "26",
-        "name": "Old Pal",
-        "category": "Ordinary Drink",
-        "glass": "Old-fashioned glass",
-        "instructions": "Stir well.",
-        "ingredients": [
-          "Canadian whisky",
-          "Campari",
-          "Dry Vermouth"
-        ],
-        "thumbnail": "https://www.thecocktaildb.com/images/media/drink/x03td31521761009.jpg"
+        "name": "Whiskey Sour",
+        "price": 9.99,
+        "ingredients": ["Bourbon", "Lemon Juice", "Simple Syrup", "Orange Slice", "Cherry"],
+        "glass": "Rocks Glass",
+        "instructions": "1. Fill a shaker with ice. 2. Add bourbon, lemon juice, and simple syrup. 3. Shake well. 4. Fill a rocks glass with ice. 5. Strain the mixture into the glass. 6. Garnish with an orange slice and a cherry.",
+        "image": "whiskey-sour.jpg"
       },
       {
-        "id": "27",
-        "name": "Paloma",
-        "category": "Ordinary Drink",
-        "glass": "Highball glass",
-        "instructions": "Shake together in a cocktail shaker, then strain into the glass over crushed ice. Serve immediately.",
-        "ingredients": [
-          "Tequila",
-          "Grapefruit juice",
-          "Club soda",
-          "Lime juice",
-          "Salt"
-        ],
-        "thumbnail": "https://www.thecocktaildb.com/images/media/drink/samm5j1513706393.jpg"
+        "name": "Gin and Tonic",
+        "price": 7.99,
+        "ingredients": ["Gin", "Tonic Water", "Lime Wedge"],
+        "glass": "Highball Glass",
+        "instructions": "1. Fill a highball glass with ice. 2. Add gin. 3. Top with tonic water. 4. Stir gently. 5. Garnish with a lime wedge.",
+        "image": "gin-and-tonic.jpg"
       },
       {
-        "id": "28",
-        "name": "Tom Collins",
-        "category": "Ordinary Drink",
-        "glass": "Collins glass",
-        "instructions": "Shake juice of lemon with sugar and gin in a mixing glass. Pour over ice cubes in a Collins glass. Fill with carbonated water and stir. Add the twist of lemon peel and serve.",
-        "ingredients": [
-          "Gin",
-          "Lemon juice",
-          "Sugar",
-          "Carbonated water",
-          "Cherry",
-          "Lemon"
-        ],
-        "thumbnail": "https://www.thecocktaildb.com/images/media/drink/qystvv1439907682.jpg"
+        "name": "White Russian",
+        "price": 9.99,
+        "ingredients": ["Vodka", "Coffee Liqueur", "Cream"],
+        "glass": "Old Fashioned Glass",
+        "instructions": "1. Fill an old fashioned glass with ice. 2. Add vodka and coffee liqueur. 3. Stir gently. 4. Float the cream on top. 5. Serve without mixing.",
+        "image": "white-russian.jpg"
       },
       {
-        "id": "29",
-        "name": "Gin Fizz",
-        "category": "Ordinary Drink",
-        "glass": "Collins glass",
-        "instructions": "Shake all ingredients with ice cubes, except soda water. Pour into glass. Top with soda water.",
-        "ingredients": [
-          "Gin",
-          "Lemon juice",
-          "Sugar",
-          "Carbonated water"
-        ],
-        "thumbnail": "https://www.thecocktaildb.com/images/media/drink/xhl8q31504351772.jpg"
+        "name": "Manhattan",
+        "price": 10.99,
+        "ingredients": ["Bourbon", "Sweet Vermouth", "Angostura Bitters", "Cherry"],
+        "glass": "Cocktail Glass",
+        "instructions": "1. Fill a mixing glass with ice. 2. Add bourbon, sweet vermouth, and bitters. 3. Stir well. 4. Strain into a chilled cocktail glass. 5. Garnish with a cherry.",
+        "image": "manhattan.jpg"
       },
       {
-        "id": "30",
-        "name": "Singapore Sling",
-        "category": "Ordinary Drink",
-        "glass": "Collins glass",
-        "instructions": "Shake all ingredients with ice cubes, except soda water. Pour into glass. Top with soda water.",
-        "ingredients": [
-          "Cherry brandy",
-          "Gin",
-          "Sweet and sour",
-          "Club soda",
-          "Grenadine",
-          "Cherry",
-          "Pineapple"
-        ],
-        "thumbnail": "https://www.thecocktaildb.com/images/media/drink/rysb3r1513706985.jpg"
+        "name": "Long Island Iced Tea",
+        "price": 11.99,
+        "ingredients": ["Vodka", "Tequila", "Rum", "Gin", "Triple Sec", "Lemon Juice", "Simple Syrup", "Cola", "Lemon Wedge"],
+        "glass": "Collins Glass",
+        "instructions": "1. Fill a shaker with ice. 2. Add vodka, tequila, rum, gin, triple sec, lemon juice, and simple syrup. 3. Shake well. 4. Fill a Collins glass with ice. 5. Strain the mixture into the glass. 6. Top with cola. 7. Garnish with a lemon wedge.",
+        "image": "long-island-iced-tea.jpg"
+      },
+      {
+        "name": "Mint Julep",
+        "price": 9.99,
+        "ingredients": ["Bourbon", "Simple Syrup", "Mint Leaves", "Crushed Ice", "Mint Sprig"],
+        "glass": "Mint Julep Cup",
+        "instructions": "1. Muddle mint leaves and simple syrup in a mint julep cup. 2. Fill the cup with crushed ice. 3. Add bourbon. 4. Stir gently. 5. Garnish with a mint sprig.",
+        "image": "mint-julep.jpg"
+      },
+      {
+        "name": "Piña Colada",
+        "price": 9.99,
+        "ingredients": ["White Rum", "Coconut Cream", "Pineapple Juice", "Pineapple Wedge", "Cherry"],
+        "glass": "Hurricane Glass",
+        "instructions": "1. Fill a blender with ice. 2. Add white rum, coconut cream, and pineapple juice. 3. Blend until smooth. 4. Pour into a hurricane glass. 5. Garnish with a pineapple wedge and a cherry.",
+        "image": "pina-colada.jpg"
+      },
+      {
+        "name": "Sex on the Beach",
+        "price": 8.99,
+        "ingredients": ["Vodka", "Peach Schnapps", "Cranberry Juice", "Orange Juice", "Orange Slice", "Cherry"],
+        "glass": "Highball Glass",
+        "instructions": "1. Fill a highball glass with ice. 2. Add vodka, peach schnapps, cranberry juice, and orange juice. 3. Stir gently. 4. Garnish with an orange slice and a cherry.",
+        "image": "sex-on-the-beach.jpg"
+      },
+      {
+        "name": "Screwdriver",
+        "price": 7.99,
+        "ingredients": ["Vodka", "Orange Juice", "Orange Slice"],
+        "glass": "Highball Glass",
+        "instructions": "1. Fill a highball glass with ice. 2. Add vodka. 3. Top with orange juice. 4. Stir gently. 5. Garnish with an orange slice.",
+        "image": "screwdriver.jpg"
+      },
+      {
+        "name": "White Wine Spritzer",
+        "price": 7.99,
+        "ingredients": ["White Wine", "Club Soda", "Lemon Slice"],
+        "glass": "Wine Glass",
+        "instructions": "1. Fill a wine glass with ice. 2. Add white wine. 3. Top with club soda. 4. Stir gently. 5. Garnish with a lemon slice.",
+        "image": "white-wine-spritzer.jpg"
+      },
+      {
+        "name": "Whiskey Ginger",
+        "price": 8.99,
+        "ingredients": ["Whiskey", "Ginger Ale", "Lemon Wedge"],
+        "glass": "Highball Glass",
+        "instructions": "1. Fill a highball glass with ice. 2. Add whiskey. 3. Top with ginger ale. 4. Stir gently. 5. Garnish with a lemon wedge.",
+        "image": "whiskey-ginger.jpg"
+      },
+      {
+        "name": "Tequila Sunrise",
+        "price": 8.99,
+        "ingredients": ["Tequila", "Orange Juice", "Grenadine", "Orange Slice", "Cherry"],
+        "glass": "Highball Glass",
+        "instructions": "1. Fill a highball glass with ice. 2. Add tequila and orange juice. 3. Stir gently. 4. Slowly pour grenadine down the side of the glass. 5. Garnish with an orange slice and a cherry.",
+        "image": "tequila-sunrise.jpg"
+      },
+      {
+        "name": "Irish Coffee",
+        "price": 9.99,
+        "ingredients": ["Irish Whiskey", "Hot Coffee", "Sugar", "Whipped Cream"],
+        "glass": "Irish Coffee Glass",
+        "instructions": "1. Fill an Irish coffee glass with hot water to preheat it. 2. Empty the glass. 3. Add sugar and hot coffee. 4. Stir until the sugar is dissolved. 5. Add Irish whiskey. 6. Stir gently. 7. Top with whipped cream.",
+        "image": "irish-coffee.jpg"
       }
     ]
   }
