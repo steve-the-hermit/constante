@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Drinks AHOY!</title>
+  <title>Drink Catalogue</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
   <header>
     <h1>Drink Catalogue</h1>
-    <h2>we may not have a price,but we sure do have a <i>drink!</i></h2>
+    <h2>we may not have a price, but we sure do have a <i>drink!</i></h2>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search drink...">
+      <ul id="suggestionsList"></ul>
+    </div>
   </header>
 
   <div class="container">
-    <div id="drinksContainer"></div>
+    <div class="drink-grid" id="drinksContainer"></div>
   </div>
   
   <div id="drinkPopup" class="drink-popup">

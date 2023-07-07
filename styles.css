@@ -27,65 +27,50 @@ h1 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-footer {
-  text-align: center;
-  padding: 20px;
+.search-bar {
+  position: relative;
+  margin-bottom: 20px;
 }
 
-h3 {
-  margin: 0;
-  margin-bottom: 10px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-input[type="text"],
-textarea {
+.search-bar input[type="text"] {
   width: 300px;
   padding: 10px;
-  margin-top: 10px;
   border-radius: 5px;
   border: none;
 }
 
-button[type="submit"] {
-  padding: 10px 20px;
-  margin-top: 10px;
-  background-color: #8B4513;
-  color: #FFF;
-  border: none;
+#suggestionsList {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #FFF;
   border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 5px 0;
+  list-style: none;
+  display: none;
+}
+
+#suggestionsList li {
+  padding: 5px 10px;
   cursor: pointer;
 }
 
-button#scrollToTopButton {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 40px;
-  height: 40px;
-  background-color: #8B4513;
-  color: #FFF;
-  border: none;
-  border-radius: 50%;
-  font-size: 24px;
-  cursor: pointer;
-  opacity: 0.7;
+#suggestionsList li:hover {
+  background-color: #F5F5F5;
 }
 
-button#scrollToTopButton:hover {
-  opacity: 1;
+.drink-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
 }
 
 .drink-card {
   background-color: #3c2b24;
   padding: 20px;
   border-radius: 10px;
-  margin-bottom: 20px;
   position: relative;
 }
 
@@ -94,7 +79,7 @@ button#scrollToTopButton:hover {
   max-height: 200px;
   object-fit: cover;
   border-radius: 5px;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .drink-card h2 {
@@ -129,16 +114,14 @@ button#scrollToTopButton:hover {
 .drink-popup #drinkPopupContent {
   color: #FFF;
 }
-
-.drink-popup #drinkPopupContent h2 {
-  font-size: 24px;
-  margin: 10px 0;
+footer {
+  text-align: center;
+  padding: 20px;
+  grid-column: 1 / -1; /* Add this line */
 }
-
-.drink-popup #drinkPopupContent p {
-  margin: 5px 0;
-}
-
-.drink-popup.active {
-  display: block;
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* Add this line */
 }
