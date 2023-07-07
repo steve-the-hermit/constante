@@ -1,4 +1,4 @@
-Constante - Cocktail Menu catalogue
+Drinks Ahoy! - Cocktail Menu catalogue
 Overview
 Constante is a cocktail menu application built with HTML, CSS, and JavaScript. It allows users to explore a variety of cocktail recipes sourced from a public API. Whether you're a cocktail enthusiast or a bartender looking for inspiration, Constante has got you covered.
 
