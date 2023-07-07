@@ -34,7 +34,7 @@ The application uses a public API to fetch cocktail data. No API key is required
 Ownership
 Author: Steve Macharia
 
-License: This project is licensed under the MIT License.
+License: This project is licensed under the no known licence.
 
 Contributions
 Contributions to the Constante project are welcome. If you have any ideas, bug fixes, or enhancements, feel free to open an issue or submit a pull request. Let's make Constante even better together!
