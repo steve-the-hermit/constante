@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 DRINKS AHOY!- Cocktail Menu catalogue
+=======
+Drinks Ahoy! - Cocktail Menu catalogue
+>>>>>>> 12824dc5121afd5315ed8d25e23a30e7fa65f914
 Overview
 Constante is a cocktail menu application built with HTML, CSS, and JavaScript. It allows users to explore a variety of cocktail recipes sourced from a public API. Whether you're a cocktail enthusiast or a bartender looking for inspiration, Constante has got you covered.
 
@@ -34,7 +38,7 @@ The application uses a public API to fetch cocktail data. No API key is required
 Ownership
 Author: Steve Macharia
 
-License: This project is licensed under the MIT License.
+License: This project is licensed under the no known licence.
 
 Contributions
 Contributions to the Constante project are welcome. If you have any ideas, bug fixes, or enhancements, feel free to open an issue or submit a pull request. Let's make Constante even better together!
